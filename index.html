@@ -3,23 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Practise | Guess the number</title>
+    <link rel="stylesheet" href="./guessTheNumber.css" />
   </head>
   <body>
-    <main>
-      <h1>Counter</h1>
-      <div class="inc-dec-action">
-        <button id="btn-decrement">-</button>
-        <div id="output">0</div>
-        <button id="btn-increment">+</button>
+    <main class="main-container">
+      <h1>Guess the Number</h1>
+      <div>Enter a guess between 0 and 100</div>
+      <input min="0" max="100" type="number" id="input" />
+      <div class="btn">
+        <button id="btn-submit">Submit</button>
+        <button id="btn-start-game">Start Game</button>
       </div>
-      <div>
-        Increment/Decrement by :
-        <span><input id="input" type="number" value="1" /></span>
-      </div>
-      <button id="btn-reset">Reset</button>
+      <div id="output"></div>
+      <div id="guess-display">Your Guess :</div>
     </main>
-    <script src="./app.js"></script>
+    <script src="./guessTheNumber.js"></script>
   </body>
 </html>

@@ -3,21 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practise | Guess the number</title>
-    <link rel="stylesheet" href="./guessTheNumber.css" />
+    <title></title>
+    <link rel="stylesheet" href="./stringTransformation.css" />
   </head>
+
   <body>
     <main class="main-container">
-      <h1>Guess the Number</h1>
-      <div>Enter a guess between 0 and 100</div>
-      <input min="0" max="100" type="number" id="input" />
-      <div class="btn">
-        <button id="btn-submit">Submit</button>
-        <button id="btn-start-game">Start Game</button>
+      <input id="input" type="text" />
+      <div class="output-container">
+        <div class="output" id="lowercase"></div>
+        <span>lowercase</span>
       </div>
-      <div id="output"></div>
-      <div id="guess-display">Your Guess :</div>
+      <div class="output-container">
+        <div class="output" id="uppercase"></div>
+        <span>uppercase</span>
+      </div>
+      <div class="output-container">
+        <div class="output" id="camelcase"></div>
+        <span>camelcase</span>
+      </div>
+      <div class="output-container">
+        <div class="output" id="pascalcase"></div>
+        <span>pascalcase</span>
+      </div>
+      <div class="output-container">
+        <div class="output" id="snakecase"></div>
+        <span>snakecase</span>
+      </div>
+      <div class="output-container">
+        <div class="output" id="kebabcase"></div>
+        <span>kebabcase</span>
+      </div>
+      <div class="output-container">
+        <div class="output" id="trim"></div>
+        <span>trim</span>
+      </div>
     </main>
-    <script src="./guessTheNumber.js"></script>
+    <script src="./stringTransformation.js"></script>
   </body>
 </html>
